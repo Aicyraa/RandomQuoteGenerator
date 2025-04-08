@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bs/css/bootstrap.min.css">
+    <script src="../../bs/js/bootstrap.bundle.min.js"> </script>
+    <title>Random Quotes</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #04091b, #020208, #04091b);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .fs-1 {
+            color: #f8f9fc;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+        }
+
+        .fs-5 {
+            color: #d1d3e2;
+            font-size: 1.25rem;
+            line-height: 1.8;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            border: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004085;
+        }
+
+        /* Media Query for small screens (mobile) */
+        @media screen and (max-width: 480px) {
+            .container {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+        /* Styling for the quote sections */
+        .quote-section {
+            border: 2px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .quote-section hr {
+            border-color: #007bff;
+        }
+
+        .fs-1, .fs-5 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .quote-author {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #f8f9fc;
+        }
+
+        .quote-message {
+            color: #d1d3e2;
+            font-size: 1.25rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row row-cols-1">
+        <div class="col-12">
+            <div class="container d-block ">
+                <div class="row">
+                    <div class="col-12 mb-4 bg-dark rounded-3">
+                        <div class="p-2 rounded-5">
+                            <div class="quote-author" id="author">Author</div>
+                            <hr class="border border-light">
+                            <div class="quote-message" id="message">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, magni mollitia
+                                perspiciatis aspernatur enim explicabo? Ipsum porro quod sint incidunt ut amet nulla sit distinctio
+                                necessitatibus corporis! Soluta, nihil dolores.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="container mt-3 d-block">
+                <button class="btn btn-primary w-100" onclick="quote()">Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+
+</body>
+
+</html>
